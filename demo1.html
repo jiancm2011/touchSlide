@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        /* base CSS */
+        .slider { width:100%; overflow:hidden; }
+        .slider_pointer { display:inline-block;}
+        .slider_pointer i {
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #eee;
+        }
+        .slider_pointer .cur { background:#aaa; }
+        .slider_box {
+            position: relative;
+            padding: 12px 0;
+            text-align: center;
+            -webkit-backface-visibility:hidden;
+            -webkit-transform-style:preserve-3d;
+        }
+        .slider_box:after {
+            content:"\200B";
+            display:block;
+            height:0;
+            clear:both;
+        }
+        .slider_box li {
+            float:left;
+            height:145px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider">
+    <span class="slider_pointer">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </span>
+    <ul class="slider_box">
+        <li>
+            <a href="#img1" title="我是标题1">
+                <img src="http://dummyimage.com/300x110/000/fff" alt="我是标题1">
+                <p>我是标题1</p>
+            </a>
+        </li>
+        <li>
+            <a href="#img2" title="我是标题2">
+                <img src="http://dummyimage.com/300x110/a00/fff" alt="我是标题2">
+                <p>我是标题2</p>
+            </a>
+        </li>
+        <li>
+            <a href="#img3" title="我是标题3">
+                <img src="http://dummyimage.com/300x110/0a0/fff" alt="我是标题3">
+                <p>我是标题3</p>
+            </a>
+        </li>
+        <li>
+            <a href="#img4" title="我是标题4">
+                <img src="http://dummyimage.com/300x110/00a/fff" alt="我是标题4">
+                <p>我是标题4</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/touch-slide-zepto.js"></script>
+<script type="text/javascript">
+    touchSlide({
+        $box: $(".slider_box"),
+        $pointer:  $(".slider_pointer"),
+        isPlay: false
+    });
+</script>
+</body>
+</html>
