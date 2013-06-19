@@ -5,15 +5,27 @@
     <link rel="stylesheet" href="css/reset.css">
     <style type="text/css">
         /* base CSS */
-        .slider { width:100%; overflow:hidden; }
-        .slider_pointer { display:inline-block;}
-        .slider_pointer i {
-            display:inline-block;
-            width: 10px;
-            height: 10px;
-            background-color: #eee;
+        .slider {
+            width:100%;
+            overflow:hidden;
+            position: relative;
         }
-        .slider_pointer .cur { background:#aaa; }
+
+        .slider_leftBtn, .slider_rightBtn {
+            position: absolute;
+            background-color: #eee;
+            top: 50%;
+            margin-top: -30px;
+            height: 60px;
+            width: 50px;
+            z-index: 1;
+        }
+        .slider_leftBtn { left: 0px; }
+        .slider_rightBtn { right: 0px; }
+        .slider .disabled {
+            background-color: #aaa;
+        }
+
         .slider_box {
             position: relative;
             padding: 12px 0;
@@ -29,19 +41,26 @@
         }
         .slider_box li {
             float:left;
-            height:145px;
         }
+
+        .slider_pointer {
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+        }
+        .slider_pointer i {
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #eee;
+        }
+        .slider_pointer .cur { background:#aaa; }
     </style>
 </head>
 <body>
 
 <div class="slider">
-    <span class="slider_pointer">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-    </span>
+    <div class="slider_leftBtn">&lt;</div>
     <ul class="slider_box">
         <li>
             <a href="#img1" title="我是标题1">
@@ -68,14 +87,27 @@
             </a>
         </li>
     </ul>
+    <div class="slider_rightBtn">&gt;</div>
+    <div class="slider_pointer">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
 </div>
 
-<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript">
+    var script = '%3Cscript type="text/javascript" src="js/'
+            + ('__proto__' in {} ? "zepto" : "jquery-1.9.1") + '.js" %3E%3C/script%3E';
+    document.write(decodeURIComponent(script));
+</script>
 <script type="text/javascript" src="js/touch-slide-zepto.js"></script>
 <script type="text/javascript">
     touchSlide({
         $box: $(".slider_box"),
         $pointer:  $(".slider_pointer"),
+        $leftBtn: $(".slider_leftBtn"),
+        $rightBtn: $(".slider_rightBtn"),
         isPlay: false
     });
 </script>

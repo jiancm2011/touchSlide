@@ -1,8 +1,12 @@
-;(function(W, D, $) {
-    W.touchSlide = function() {
+/**
+ * 依赖 jQuery.js 或 Zepto.js
+ * */
+
+;(function (W, D, $) {
+    W.touchSlide = function () {
         var def = {
             //浏览器内核标记，格式如:["webkit", "-webkit-"]
-            vendor: function() {
+            vendor: function () {
                 var obj = {
                         webkit: "webkitTransform",
                         Moz: "MozTransition",
@@ -11,11 +15,12 @@
                     },
                     style = D.body.style;
 
-                for(key in obj) {
-                    if(obj[key] in style) {
+                for (key in obj) {
+                    if (obj[key] in style) {
                         return [key, "-" + key.toLowerCase() + "-"];
                     }
                 }
+                return ["", ""];
             }(),
 
             //是否触摸设备
@@ -24,53 +29,54 @@
             start: "touchstart",
             move: "touchmove",
             end: "touchend"
-        }, funs = {
-            translate: function() {
+        }, fns = {
+            translate: function () {
                 var vendor = def.vendor,
                     is3d = true,
                     ua = navigator.userAgent;
 
-                if(vendor[0].toLowerCase() == "o") {
+                console.log(def);
+                if (vendor[0].toLowerCase() === "o") {
                     is3d = false;
-                } else if(vendor[0].toLowerCase() == "ms" && ua.match(/MSIE\s(\S+);/gi) && parseInt(RegExp.$1) < 10) {
+                } else if (vendor[0].toLowerCase() === "ms" && ua.match(/MSIE\s(\S+);/gi) && parseInt(RegExp.$1) < 10) {
                     is3d = false;
-                } else if(ua.match(/android\s(\S+);/gi) && parseInt(RegExp.$1) < 3) {
+                } else if (ua.match(/android\s(\S+);/gi) && parseInt(RegExp.$1) < 3) {
                     is3d = false;
                 }
 
-                if(is3d) {
-                    return function(x, y, z) {
+                if (is3d) {
+                    return function (x, y, z) {
                         return "translate3d(" + x + ", " + y + ", " + z + ")";
                     };
                 } else {
-                    return function(x, y) {
+                    return function (x, y) {
                         return "translate(" + x + ", " + y + ")";
                     };
                 }
 
             }(),
-            transform: function(elem, str) {
+            transform: function (elem, str) {
                 elem.style[def.vendor[0] + "Transform"] = str;
                 return elem;
             },
-            transition: function(elem) {
+            transition: function (elem) {
                 var str = "";
-                if(arguments.length > 1) {
+                if (arguments.length > 1) {
                     str = [].slice.call(arguments, 1).join(",");
                 }
                 elem.style[def.vendor[0] + "Transition"] = str;
                 return elem;
             },
-            client: function(e, path) {
+            client: function (e, path) {
                 var str = "client" + path;
-                if(def.isTouch) {
-                    funs.client = function(e, path) {
+                if (def.isTouch) {
+                    fns.client = function (e, path) {
                         var str = "client" + path;
                         return e.targetTouches[0][str];
                     }
                     return e.targetTouches[0][str];
                 } else {
-                    funs.client = function(e, path) {
+                    fns.client = function (e, path) {
                         var str = "client" + path;
                         return e[str];
                     }
@@ -80,7 +86,7 @@
             }
         };
 
-        if(!def.isTouch) {
+        if (!def.isTouch) {
             eventType.start = "mousedown";
             eventType.move = "mousemove";
             eventType.end = "mouseup";
@@ -90,11 +96,13 @@
 
             var $pointer = opt.$pointer,
                 $box = opt.$box,
+                $leftBtn = opt.$leftBtn,
+                $rightBtn = opt.$rightBtn,
                 $blocks = $box.children(),
                 blocksLength = $blocks.length, //滑块数量
                 curClass = opt.curClass,
                 percent = 100 / blocksLength,
-                width = D.documentElement.clientWidth,
+                width = $blocks.width(),
                 slideDistance = width / 5, //有效滑动距离（触发滑块切换）
                 cur = 0, //当前滑块标识
                 x = 0,  //存储一次完整move的距离X
@@ -108,76 +116,131 @@
                 isMove = false, //判断move事件是否开始
                 SPEED = 0.3, //动画速度
                 transitionStr = def.vendor[1] + "transform " + SPEED + "s ease-in",
-                highlightPointer = function() {};
+                checkBtnStatus = function () {},
+                highlightPointer = function () {},
+                slideAnimate = function () {},
+                moveSlider = function () {};
 
-            function sliderEffect() {
-                highlightPointer();
-                opt.touchEndFun(opt, cur);
-                funs.transition($box[0], transitionStr);
-                funs.transform($box[0], funs.translate(-cur * percent + "%", 0, 0));
+
+            if(def.vendor[0] + "Transition" in document.body.style) {
+                slideAnimate = function ($this) {
+                    fns.transition($this[0], transitionStr);
+                    fns.transform($this[0], fns.translate(-cur * percent + "%", 0, 0));
+                };
+                moveSlider = function ($this, x) {
+                    fns.transform($this[0], fns.translate((x / width  - cur) * percent + "%", 0, 0));
+                };
+            } else {
+                slideAnimate = function ($this) {
+                    $this.animate({
+                        "margin-left": -cur * 100 + "%"
+                    }, SPEED * 1000);
+                };
+                moveSlider = function ($this, x) {
+                    $this.css("margin-left", (x / width  - cur) * 100 + "%");
+                    console.log(width);
+                };
             }
 
-            if($pointer) {
+            $box.on("animatestart", function (e, opt, cur) {
+                highlightPointer();
+                checkBtnStatus("disabled");
+                opt.animateStartCallback(opt, cur);
+                slideAnimate($(this));
+            });
+
+            // 判断是否有$pointer模块
+            if ($pointer && $pointer.length) {
                 var $points = $pointer.children();
 
-                $points.each(function(index) {
+                $points.each(function (index) {
                     $points.eq(index).attr("data-index", index);
                 }).eq(0).addClass(curClass);
 
-                highlightPointer = function() {
+                highlightPointer = function () {
                     $points.filter("." + curClass).removeClass(curClass);
                     $points.eq(cur).addClass(curClass);
                 };
 
-                $points.on("click", function() {
+                $points.on("click", function () {
                     var $self = $(this);
-                    if($self.hasClass(curClass)) return;
-                    cur = $self.attr("data-index");
-                    sliderEffect();
+                    if ($self.hasClass(curClass)) return;
+                    cur = parseInt($self.attr("data-index"));
+                    $box.trigger("animatestart", [opt, cur]);
                 });
             }
 
-            var autoSlide = function() {
-                if(opt.isPlay) {
+            // 判断是否有 $leftBtn 和 $rightBtn 模块
+            if ($leftBtn && $rightBtn && $leftBtn.length && $rightBtn.length) {
+                checkBtnStatus = function (klass) {
+                    if (cur === 0) {
+                        $leftBtn.addClass(klass);
+                        $rightBtn.removeClass(klass);
+                    } else if (cur === blocksLength -1) {
+                        $leftBtn.removeClass(klass);
+                        $rightBtn.addClass(klass);
+                    } else {
+                        $leftBtn.removeClass(klass);
+                        $rightBtn.removeClass(klass);
+                    }
+                };
+
+                $leftBtn.addClass("disabled").on("click", function () {
+                    if (cur > 0) {
+                        cur--;
+                        $box.trigger("animatestart", [opt, cur]);
+                    }
+                });
+
+                $rightBtn.on("click", function () {
+                    if (cur < blocksLength - 1) {
+                        cur++;
+                        $box.trigger("animatestart", [opt, cur]);
+                    }
+                });
+            }
+
+            var autoSlide = function () {
+                if (opt.isPlay) {
                     var interval = null; //循环播放 计时器对象
                     return {
-                        play: function() {
+                        play: function () {
                             this.stop();
-                            interval = setInterval(function() {
+                            interval = setInterval (function () {
                                 ++cur < blocksLength || (cur = 0);
-                                sliderEffect();
+                                $box.trigger("animatestart", [opt, cur]);
                             }, opt.playInterval);
                         },
-                        stop: function() {
+                        stop: function () {
                             clearInterval(interval);
                         }
                     }
                 } else {
                     return {
-                        play: function() {},
-                        stop: function() {}
+                        play: function () {},
+                        stop: function () {}
                     }
                 }
             }();
 
-            $box[0].addEventListener(eventType.start, function(e) {
+            $box.on(eventType.start, function (e) {
                 isBegin = true;
                 x = y = 0;
                 isXY = 0;
-                sX = funs.client(e, "X");
-                sY = funs.client(e, "Y");
-                funs.transition(this, "");
+                sX = fns.client(e, "X");
+                sY = fns.client(e, "Y");
+                fns.transition(this, "");
                 !def.isTouch && e.preventDefault();
                 autoSlide.stop();
-            }, false);
+            });
 
-            $box[0].addEventListener(eventType.move, function(e) {
+            $box.on(eventType.move, function (e) {
                 if (!isBegin) {
                     return;
                 }
                 isMove = true;
-                var tempX = funs.client(e, "X"),
-                    tempY = funs.client(e, "Y");
+                var tempX = fns.client(e, "X"),
+                    tempY = fns.client(e, "Y");
                 dX = tempX - sX;
                 dY = tempY - sY;
                 sX = tempX;
@@ -185,18 +248,19 @@
                 x += dX;
                 y += dY;
                 isXY == 0 && (isXY = Math.abs(dX) > Math.abs(dY) ? -1 : 1);
-                if(isXY == 1) {
+                if (isXY == 1) {
                     isBegin = false;
                     return;
                 }
                 e.preventDefault();
-                funs.transform(this, funs.translate((x / width  - cur) * percent + "%", 0, 0));
-            }, false);
+                //fns.transform(this, fns.translate((x / width  - cur) * percent + "%", 0, 0));
+                moveSlider($(this), x);
+            });
 
-            $box[0].addEventListener(eventType.end, function(e) {
-                if(!isBegin) {
+            $box.on(eventType.end, function (e) {
+                if (!isBegin) {
                     return isBegin = isMove = false;
-                } else if(!isMove) {
+                } else if (!isMove) {
                     autoSlide.play();
                     return isBegin = isMove = false;
                 }
@@ -206,22 +270,24 @@
                 } else if (x < -slideDistance) {
                     cur = cur === blocksLength - 1 ? blocksLength - 1 : cur + 1;
                 }
-                sliderEffect();
+                $box.trigger("animatestart", [opt, cur]);
                 autoSlide.play();
                 isBegin = isMove = false;
-            }, false);
+            });
 
             autoSlide.play();
         }
 
-        return function(o) {
+        return function (o) {
             var opt = {
-                $box: null, //内容盒子的$对象 [必需]
-                $pointer: null,  //指针的$对象 [可选]
-                curClass: "cur", //设置被选中tabs的类名，缺省值:"cur" [可选]
-                isPlay: true,   //是否自动播放，缺省值:true [可选]
-                playInterval: 5000,  //动画自动播放的切换间隔时间，缺省值:5000ms [可选]
-                touchEndFun: function() {}  //手指离开屏幕后触发的回调
+                $box: null,                             // 内容盒子的$对象 [必需]
+                $pointer: null,                         // 指针的$对象 [可选]
+                $leftBtn: null,                         // 左边按钮的$对象 [可选]
+                $rightBtn: null,                        // 右边按钮的$对象 [可选]
+                curClass: "cur",                        // 设置被选中tabs的类名，缺省值:"cur" [可选]
+                isPlay: true,                           // 是否自动播放，缺省值:true [可选]
+                playInterval: 5000,                     // 动画自动播放的切换间隔时间，缺省值:5000ms [可选]
+                animateStartCallback: function () {}    // 动画开始触发的回调
             };
 
             $.extend(opt, o);
