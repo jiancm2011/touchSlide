@@ -242,9 +242,10 @@
                 sX = fns.client(e, "X");
                 sY = fns.client(e, "Y");
                 fns.transition(this, "");
-                !def.isTouch && e.preventDefault();
+                //!def.isTouch && e.preventDefault();
                 autoSlide.stop();
                 startCallback(opt, cur);
+                return false;
             });
 
             $box.on(eventType.move, function (e) {
