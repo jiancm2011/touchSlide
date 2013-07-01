@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>demo1</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>img-slider-callback</title>
     <link rel="stylesheet" href="css/reset.css">
     <style type="text/css">
         /* base CSS */
@@ -108,6 +109,7 @@
         $pointer:  $(".slider_pointer"),
         $leftBtn: $(".slider_leftBtn"),
         $rightBtn: $(".slider_rightBtn"),
+        playInterval: 8000,
         start: function (opt, cur) {
             console.log("start");
         },
@@ -119,6 +121,9 @@
         },
         animatestart: function (opt, cur) {
             console.log("animatestart", cur);
+        },
+        animateend: function (opt, cur) {
+            console.log("animateend", cur);
         }
     });
 </script>

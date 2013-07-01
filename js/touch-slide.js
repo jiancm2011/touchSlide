@@ -119,6 +119,7 @@
                 moveCallback = opt.move,
                 endCallback = opt.end,
                 aniStartCallback = opt.animatestart,
+                aniEndCallback = opt.animateend,
                 checkBtnStatus = function () {},
                 highlightPointer = function () {},
                 slideAnimate = function () {},
@@ -127,8 +128,15 @@
 
             if(def.vendor[0] + "Transition" in document.body.style) {
                 slideAnimate = function ($this) {
-                    fns.transition($this[0], transitionStr);
-                    fns.transform($this[0], fns.translate(-cur * percent + "%", 0, 0));
+                    $this.on("transitionend", function () {
+                        fns.transition($(this)[0], "");
+                        aniEndCallback(opt, cur);
+                    });
+                    slideAnimate = function ($this) {
+                        fns.transition($this[0], transitionStr);
+                        fns.transform($this[0], fns.translate(-cur * percent + "%", 0, 0));
+                    };
+                    slideAnimate($this);
                 };
                 moveSlider = function ($this, x) {
                     fns.transform($this[0], fns.translate((x / width  - cur) * percent + "%", 0, 0));
@@ -137,7 +145,9 @@
                 slideAnimate = function ($this) {
                     $this.animate({
                         "margin-left": -cur * 100 + "%"
-                    }, SPEED * 1000);
+                    }, SPEED * 1000, function () {
+                        aniEndCallback(opt, cur);
+                    });
                 };
                 moveSlider = function ($this, x) {
                     $this.css("margin-left", (x / width  - cur) * 100 + "%");
@@ -297,7 +307,8 @@
                 start: function (opt, cur) {},          // touchstart触发的回调
                 move: function (opt, cur) {},           // touchmove触发的回调
                 end: function (opt, cur) {},            // touchend触发的回调
-                animatestart: function (opt, cur) {}    // 动画开始时触发的回调
+                animatestart: function (opt, cur) {},   // 动画开始时触发的回调
+                animateend: function (opt, cur) {}      // 动画结束时触发的回调
             };
 
             $.extend(opt, o);
