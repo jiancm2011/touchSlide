@@ -178,7 +178,7 @@
                     var $self = $(this);
                     if ($self.hasClass(curClass)) return;
                     cur = parseInt($self.attr("data-index"));
-                    $box.trigger("animatestart", [opt, cur]);
+                    $box.triggerHandler("animatestart", [opt, cur]);
                 });
             }
 
@@ -200,14 +200,14 @@
                 $leftBtn.addClass("disabled").on("click", function () {
                     if (cur > 0) {
                         cur--;
-                        $box.trigger("animatestart", [opt, cur]);
+                        $box.triggerHandler("animatestart", [opt, cur]);
                     }
                 });
 
                 $rightBtn.on("click", function () {
                     if (cur < blocksLength - 1) {
                         cur++;
-                        $box.trigger("animatestart", [opt, cur]);
+                        $box.triggerHandler("animatestart", [opt, cur]);
                     }
                 });
             }
@@ -220,18 +220,18 @@
                             this.stop();
                             interval = setInterval (function () {
                                 ++cur < blocksLength || (cur = 0);
-                                $box.trigger("animatestart", [opt, cur]);
+                                $box.triggerHandler("animatestart", [opt, cur]);
                             }, opt.playInterval);
                         },
                         stop: function () {
                             clearInterval(interval);
                         }
-                    }
+                    };
                 } else {
                     return {
                         play: function () {},
                         stop: function () {}
-                    }
+                    };
                 }
             }();
 
@@ -288,7 +288,7 @@
                     cur = cur === blocksLength - 1 ? blocksLength - 1 : cur + 1;
                 }
                 endCallback(opt, cur);
-                $box.trigger("animatestart", [opt, cur]);
+                $box.triggerHandler("animatestart", [opt, cur]);
                 autoSlide.play();
                 isBegin = isMove = false;
             });

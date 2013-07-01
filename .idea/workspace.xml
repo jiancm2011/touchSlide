@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="touch-slide.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="touch-slide.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="29" selection-start="9230" selection-end="9230" vertical-scroll-proportion="-24.0">
+            <state line="180" column="32" selection-start="6702" selection-end="6709" vertical-scroll-proportion="0.33333334">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#112#782#0" expanded="false" />
@@ -51,35 +51,19 @@
                 <element signature="e#4609#5093#0" expanded="false" />
                 <element signature="e#4669#4798#0" expanded="false" />
                 <element signature="e#4853#5033#0" expanded="false" />
-                <element signature="e#6054#6772#0" expanded="false" />
                 <element signature="e#6154#6238#0" expanded="false" />
                 <element signature="e#6314#6463#0" expanded="false" />
-                <element signature="e#6514#6756#0" expanded="false" />
-                <element signature="e#6897#7933#0" expanded="false" />
-                <element signature="e#6949#7429#0" expanded="false" />
-                <element signature="e#6986#7113#0" expanded="false" />
-                <element signature="e#7148#7275#0" expanded="false" />
-                <element signature="e#7281#7411#0" expanded="false" />
-                <element signature="e#7502#7675#0" expanded="false" />
-                <element signature="e#7537#7657#0" expanded="false" />
-                <element signature="e#7729#7917#0" expanded="false" />
-                <element signature="e#7779#7899#0" expanded="false" />
-                <element signature="e#7975#8806#0" expanded="false" />
-                <element signature="e#8009#8625#0" expanded="false" />
-                <element signature="e#8092#8607#0" expanded="false" />
-                <element signature="e#8136#8461#0" expanded="false" />
-                <element signature="e#8243#8415#0" expanded="false" />
-                <element signature="e#8505#8585#0" expanded="false" />
-                <element signature="e#8631#8792#0" expanded="false" />
-                <element signature="e#8660#8774#0" expanded="false" />
-                <element signature="e#9297#10093#0" expanded="false" />
-                <element signature="e#9329#9376#0" expanded="false" />
-                <element signature="e#9783#9867#0" expanded="false" />
-                <element signature="e#10145#10892#0" expanded="false" />
-                <element signature="e#10177#10292#0" expanded="false" />
-                <element signature="e#10311#10464#0" expanded="false" />
-                <element signature="e#10505#10575#0" expanded="false" />
-                <element signature="e#10605#10705#0" expanded="false" />
+                <element signature="e#6956#7436#0" expanded="false" />
+                <element signature="e#6993#7120#0" expanded="false" />
+                <element signature="e#7155#7282#0" expanded="false" />
+                <element signature="e#7288#7418#0" expanded="false" />
+                <element signature="e#9327#10123#0" expanded="false" />
+                <element signature="e#9359#9406#0" expanded="false" />
+                <element signature="e#9813#9897#0" expanded="false" />
+                <element signature="e#10207#10322#0" expanded="false" />
+                <element signature="e#10341#10494#0" expanded="false" />
+                <element signature="e#10535#10605#0" expanded="false" />
+                <element signature="e#10635#10735#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="img-slider-callback.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="img-slider-callback.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img-slider-callback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="21" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.5068226">
+            <state line="55" column="35" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-30.193548">
               <folding />
             </state>
           </provider>
@@ -291,11 +275,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="22" width="1854" height="1178" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23154981" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23154981" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16095133" sideWeight="0.7684502" order="0" side_tool="false" content_ui="combo" />
@@ -421,35 +405,19 @@
             <element signature="e#4609#5093#0" expanded="false" />
             <element signature="e#4669#4798#0" expanded="false" />
             <element signature="e#4853#5033#0" expanded="false" />
-            <element signature="e#6054#6772#0" expanded="false" />
             <element signature="e#6154#6238#0" expanded="false" />
             <element signature="e#6314#6463#0" expanded="false" />
-            <element signature="e#6514#6756#0" expanded="false" />
-            <element signature="e#6897#7933#0" expanded="false" />
-            <element signature="e#6949#7429#0" expanded="false" />
-            <element signature="e#6986#7113#0" expanded="false" />
-            <element signature="e#7148#7275#0" expanded="false" />
-            <element signature="e#7281#7411#0" expanded="false" />
-            <element signature="e#7502#7675#0" expanded="false" />
-            <element signature="e#7537#7657#0" expanded="false" />
-            <element signature="e#7729#7917#0" expanded="false" />
-            <element signature="e#7779#7899#0" expanded="false" />
-            <element signature="e#7975#8806#0" expanded="false" />
-            <element signature="e#8009#8625#0" expanded="false" />
-            <element signature="e#8092#8607#0" expanded="false" />
-            <element signature="e#8136#8461#0" expanded="false" />
-            <element signature="e#8243#8415#0" expanded="false" />
-            <element signature="e#8505#8585#0" expanded="false" />
-            <element signature="e#8631#8792#0" expanded="false" />
-            <element signature="e#8660#8774#0" expanded="false" />
-            <element signature="e#9297#10093#0" expanded="false" />
-            <element signature="e#9329#9376#0" expanded="false" />
-            <element signature="e#9783#9867#0" expanded="false" />
-            <element signature="e#10145#10892#0" expanded="false" />
-            <element signature="e#10177#10292#0" expanded="false" />
-            <element signature="e#10311#10464#0" expanded="false" />
-            <element signature="e#10505#10575#0" expanded="false" />
-            <element signature="e#10605#10705#0" expanded="false" />
+            <element signature="e#6956#7436#0" expanded="false" />
+            <element signature="e#6993#7120#0" expanded="false" />
+            <element signature="e#7155#7282#0" expanded="false" />
+            <element signature="e#7288#7418#0" expanded="false" />
+            <element signature="e#9327#10123#0" expanded="false" />
+            <element signature="e#9359#9406#0" expanded="false" />
+            <element signature="e#9813#9897#0" expanded="false" />
+            <element signature="e#10207#10322#0" expanded="false" />
+            <element signature="e#10341#10494#0" expanded="false" />
+            <element signature="e#10535#10605#0" expanded="false" />
+            <element signature="e#10635#10735#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img-slider.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="71" selection-start="101" selection-end="101" vertical-scroll-proportion="-2.516129">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img-slider-potiner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="29" selection-start="131" selection-end="131" vertical-scroll-proportion="21.419355">
@@ -613,69 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1501" column="17" selection-start="53595" selection-end="53608" vertical-scroll-proportion="-18.038462">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="29" selection-start="9230" selection-end="9230" vertical-scroll-proportion="-24.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#112#782#0" expanded="false" />
-            <element signature="e#195#706#0" expanded="false" />
-            <element signature="e#223#426#0" expanded="false" />
-            <element signature="e#504#659#0" expanded="false" />
-            <element signature="e#549#641#0" expanded="false" />
-            <element signature="e#907#2906#0" expanded="false" />
-            <element signature="e#944#1820#0" expanded="false" />
-            <element signature="e#1120#1173#0" expanded="false" />
-            <element signature="e#1275#1328#0" expanded="false" />
-            <element signature="e#1396#1449#0" expanded="false" />
-            <element signature="e#1477#1646#0" expanded="false" />
-            <element signature="e#1525#1627#0" expanded="false" />
-            <element signature="e#1652#1805#0" expanded="false" />
-            <element signature="e#1697#1786#0" expanded="false" />
-            <element signature="e#1868#1975#0" expanded="false" />
-            <element signature="e#2017#2282#0" expanded="false" />
-            <element signature="e#2091#2175#0" expanded="false" />
-            <element signature="e#2323#2896#0" expanded="false" />
-            <element signature="e#2401#2655#0" expanded="false" />
-            <element signature="e#2455#2585#0" expanded="false" />
-            <element signature="e#2661#2881#0" expanded="false" />
-            <element signature="e#2715#2828#0" expanded="false" />
-            <element signature="e#4609#5093#0" expanded="false" />
-            <element signature="e#4669#4798#0" expanded="false" />
-            <element signature="e#4853#5033#0" expanded="false" />
-            <element signature="e#6054#6772#0" expanded="false" />
-            <element signature="e#6154#6238#0" expanded="false" />
-            <element signature="e#6314#6463#0" expanded="false" />
-            <element signature="e#6514#6756#0" expanded="false" />
-            <element signature="e#6897#7933#0" expanded="false" />
-            <element signature="e#6949#7429#0" expanded="false" />
-            <element signature="e#6986#7113#0" expanded="false" />
-            <element signature="e#7148#7275#0" expanded="false" />
-            <element signature="e#7281#7411#0" expanded="false" />
-            <element signature="e#7502#7675#0" expanded="false" />
-            <element signature="e#7537#7657#0" expanded="false" />
-            <element signature="e#7729#7917#0" expanded="false" />
-            <element signature="e#7779#7899#0" expanded="false" />
-            <element signature="e#7975#8806#0" expanded="false" />
-            <element signature="e#8009#8625#0" expanded="false" />
-            <element signature="e#8092#8607#0" expanded="false" />
-            <element signature="e#8136#8461#0" expanded="false" />
-            <element signature="e#8243#8415#0" expanded="false" />
-            <element signature="e#8505#8585#0" expanded="false" />
-            <element signature="e#8631#8792#0" expanded="false" />
-            <element signature="e#8660#8774#0" expanded="false" />
-            <element signature="e#9297#10093#0" expanded="false" />
-            <element signature="e#9329#9376#0" expanded="false" />
-            <element signature="e#9783#9867#0" expanded="false" />
-            <element signature="e#10145#10892#0" expanded="false" />
-            <element signature="e#10177#10292#0" expanded="false" />
-            <element signature="e#10311#10464#0" expanded="false" />
-            <element signature="e#10505#10575#0" expanded="false" />
-            <element signature="e#10605#10705#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,8 +605,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/img-slider-callback.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.5068226">
+        <state line="55" column="35" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-30.193548">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img-slider.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="71" selection-start="101" selection-end="101" vertical-scroll-proportion="-2.516129">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="32" selection-start="6702" selection-end="6709" vertical-scroll-proportion="0.33333334">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#112#782#0" expanded="false" />
+            <element signature="e#195#706#0" expanded="false" />
+            <element signature="e#223#426#0" expanded="false" />
+            <element signature="e#504#659#0" expanded="false" />
+            <element signature="e#549#641#0" expanded="false" />
+            <element signature="e#907#2906#0" expanded="false" />
+            <element signature="e#944#1820#0" expanded="false" />
+            <element signature="e#1120#1173#0" expanded="false" />
+            <element signature="e#1275#1328#0" expanded="false" />
+            <element signature="e#1396#1449#0" expanded="false" />
+            <element signature="e#1477#1646#0" expanded="false" />
+            <element signature="e#1525#1627#0" expanded="false" />
+            <element signature="e#1652#1805#0" expanded="false" />
+            <element signature="e#1697#1786#0" expanded="false" />
+            <element signature="e#1868#1975#0" expanded="false" />
+            <element signature="e#2017#2282#0" expanded="false" />
+            <element signature="e#2091#2175#0" expanded="false" />
+            <element signature="e#2323#2896#0" expanded="false" />
+            <element signature="e#2401#2655#0" expanded="false" />
+            <element signature="e#2455#2585#0" expanded="false" />
+            <element signature="e#2661#2881#0" expanded="false" />
+            <element signature="e#2715#2828#0" expanded="false" />
+            <element signature="e#4609#5093#0" expanded="false" />
+            <element signature="e#4669#4798#0" expanded="false" />
+            <element signature="e#4853#5033#0" expanded="false" />
+            <element signature="e#6154#6238#0" expanded="false" />
+            <element signature="e#6314#6463#0" expanded="false" />
+            <element signature="e#6956#7436#0" expanded="false" />
+            <element signature="e#6993#7120#0" expanded="false" />
+            <element signature="e#7155#7282#0" expanded="false" />
+            <element signature="e#7288#7418#0" expanded="false" />
+            <element signature="e#9327#10123#0" expanded="false" />
+            <element signature="e#9359#9406#0" expanded="false" />
+            <element signature="e#9813#9897#0" expanded="false" />
+            <element signature="e#10207#10322#0" expanded="false" />
+            <element signature="e#10341#10494#0" expanded="false" />
+            <element signature="e#10535#10605#0" expanded="false" />
+            <element signature="e#10635#10735#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
