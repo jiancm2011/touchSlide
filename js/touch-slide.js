@@ -35,7 +35,6 @@
                     is3d = true,
                     ua = navigator.userAgent;
 
-                console.log(def);
                 if (vendor[0].toLowerCase() === "o") {
                     is3d = false;
                 } else if (vendor[0].toLowerCase() === "ms" && ua.match(/MSIE\s(\S+);/gi) && parseInt(RegExp.$1) < 10) {
@@ -116,6 +115,10 @@
                 isMove = false, //判断move事件是否开始
                 SPEED = 0.3, //动画速度
                 transitionStr = def.vendor[1] + "transform " + SPEED + "s ease-in",
+                startCallback = opt.start,
+                moveCallback = opt.move,
+                endCallback = opt.end,
+                aniStartCallback = opt.animatestart,
                 checkBtnStatus = function () {},
                 highlightPointer = function () {},
                 slideAnimate = function () {},
@@ -138,14 +141,13 @@
                 };
                 moveSlider = function ($this, x) {
                     $this.css("margin-left", (x / width  - cur) * 100 + "%");
-                    console.log(width);
                 };
             }
 
             $box.on("animatestart", function (e, opt, cur) {
                 highlightPointer();
                 checkBtnStatus("disabled");
-                opt.animateStartCallback(opt, cur);
+                aniStartCallback(opt, cur);
                 slideAnimate($(this));
             });
 
@@ -232,6 +234,7 @@
                 fns.transition(this, "");
                 !def.isTouch && e.preventDefault();
                 autoSlide.stop();
+                startCallback(opt, cur);
             });
 
             $box.on(eventType.move, function (e) {
@@ -255,12 +258,15 @@
                 e.preventDefault();
                 //fns.transform(this, fns.translate((x / width  - cur) * percent + "%", 0, 0));
                 moveSlider($(this), x);
+                moveCallback(opt, cur);
             });
 
             $box.on(eventType.end, function (e) {
                 if (!isBegin) {
+                    endCallback(opt, cur);
                     return isBegin = isMove = false;
                 } else if (!isMove) {
+                    endCallback(opt, cur);
                     autoSlide.play();
                     return isBegin = isMove = false;
                 }
@@ -270,6 +276,7 @@
                 } else if (x < -slideDistance) {
                     cur = cur === blocksLength - 1 ? blocksLength - 1 : cur + 1;
                 }
+                endCallback(opt, cur);
                 $box.trigger("animatestart", [opt, cur]);
                 autoSlide.play();
                 isBegin = isMove = false;
@@ -287,7 +294,10 @@
                 curClass: "cur",                        // 设置被选中tabs的类名，缺省值:"cur" [可选]
                 isPlay: true,                           // 是否自动播放，缺省值:true [可选]
                 playInterval: 5000,                     // 动画自动播放的切换间隔时间，缺省值:5000ms [可选]
-                animateStartCallback: function () {}    // 动画开始触发的回调
+                start: function (opt, cur) {},          // touchstart触发的回调
+                move: function (opt, cur) {},           // touchmove触发的回调
+                end: function (opt, cur) {},            // touchend触发的回调
+                animatestart: function (opt, cur) {}    // 动画开始时触发的回调
             };
 
             $.extend(opt, o);
