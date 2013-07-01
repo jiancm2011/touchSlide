@@ -131,6 +131,7 @@
                     $this.on("transitionend", function () {
                         fns.transition($(this)[0], "");
                         aniEndCallback(opt, cur);
+                        return false;
                     });
                     slideAnimate = function ($this) {
                         fns.transition($this[0], transitionStr);
