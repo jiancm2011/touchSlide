@@ -23,7 +23,7 @@
       <file leaf-file-name="touch-slide.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="259" column="27" selection-start="9659" selection-end="9659" vertical-scroll-proportion="0.6333333">
+            <state line="253" column="17" selection-start="9443" selection-end="9443" vertical-scroll-proportion="0.3">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#112#782#0" expanded="false" />
@@ -54,11 +54,10 @@
                 <element signature="e#7031#7158#0" expanded="false" />
                 <element signature="e#7193#7320#0" expanded="false" />
                 <element signature="e#7326#7456#0" expanded="false" />
-                <element signature="e#9391#9438#0" expanded="false" />
-                <element signature="e#10202#10317#0" expanded="false" />
-                <element signature="e#10336#10489#0" expanded="false" />
-                <element signature="e#10530#10600#0" expanded="false" />
-                <element signature="e#10630#10730#0" expanded="false" />
+                <element signature="e#10212#10327#0" expanded="false" />
+                <element signature="e#10346#10499#0" expanded="false" />
+                <element signature="e#10540#10610#0" expanded="false" />
+                <element signature="e#10640#10740#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -403,11 +402,10 @@
             <element signature="e#7031#7158#0" expanded="false" />
             <element signature="e#7193#7320#0" expanded="false" />
             <element signature="e#7326#7456#0" expanded="false" />
-            <element signature="e#9391#9438#0" expanded="false" />
-            <element signature="e#10202#10317#0" expanded="false" />
-            <element signature="e#10336#10489#0" expanded="false" />
-            <element signature="e#10530#10600#0" expanded="false" />
-            <element signature="e#10630#10730#0" expanded="false" />
+            <element signature="e#10212#10327#0" expanded="false" />
+            <element signature="e#10346#10499#0" expanded="false" />
+            <element signature="e#10540#10610#0" expanded="false" />
+            <element signature="e#10640#10740#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -609,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="27" selection-start="9659" selection-end="9659" vertical-scroll-proportion="0.6333333">
+        <state line="253" column="17" selection-start="9443" selection-end="9443" vertical-scroll-proportion="0.3">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#112#782#0" expanded="false" />
@@ -640,11 +638,10 @@
             <element signature="e#7031#7158#0" expanded="false" />
             <element signature="e#7193#7320#0" expanded="false" />
             <element signature="e#7326#7456#0" expanded="false" />
-            <element signature="e#9391#9438#0" expanded="false" />
-            <element signature="e#10202#10317#0" expanded="false" />
-            <element signature="e#10336#10489#0" expanded="false" />
-            <element signature="e#10530#10600#0" expanded="false" />
-            <element signature="e#10630#10730#0" expanded="false" />
+            <element signature="e#10212#10327#0" expanded="false" />
+            <element signature="e#10346#10499#0" expanded="false" />
+            <element signature="e#10540#10610#0" expanded="false" />
+            <element signature="e#10640#10740#0" expanded="false" />
           </folding>
         </state>
       </provider>

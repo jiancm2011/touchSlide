@@ -250,7 +250,7 @@
 
             $box.on(eventType.move, function (e) {
                 if (!isBegin) {
-                    return;
+                    return true;
                 }
                 isMove = true;
                 var tempX = fns.client(e, "X"),
@@ -264,7 +264,7 @@
                 isXY == 0 && (isXY = Math.abs(dX) > Math.abs(dY) ? -1 : 1);
                 if (isXY == 1) {
                     isBegin = false;
-                    return;
+                    return true;
                 }
                 e.preventDefault();
                 moveSlider($(this), x);
