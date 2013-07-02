@@ -128,7 +128,7 @@
 
             if(def.vendor[0] + "Transition" in document.body.style) {
                 slideAnimate = function ($this) {
-                    $this.on("transitionend", function () {
+                    $this.on($.fx.transitionEnd, function () {
                         fns.transition($(this)[0], "");
                         aniEndCallback(opt, cur);
                         return false;

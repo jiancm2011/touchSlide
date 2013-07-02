@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="touch-slide.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="touch-slide.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="253" column="17" selection-start="9443" selection-end="9443" vertical-scroll-proportion="0.3">
+            <state line="127" column="0" selection-start="4490" selection-end="4490" vertical-scroll-proportion="-12.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#112#782#0" expanded="false" />
@@ -48,25 +48,25 @@
                 <element signature="e#2455#2585#0" expanded="false" />
                 <element signature="e#2661#2881#0" expanded="false" />
                 <element signature="e#2715#2828#0" expanded="false" />
-                <element signature="e#6192#6276#0" expanded="false" />
-                <element signature="e#6352#6501#0" expanded="false" />
-                <element signature="e#6994#7474#0" expanded="false" />
-                <element signature="e#7031#7158#0" expanded="false" />
-                <element signature="e#7193#7320#0" expanded="false" />
-                <element signature="e#7326#7456#0" expanded="false" />
-                <element signature="e#10212#10327#0" expanded="false" />
-                <element signature="e#10346#10499#0" expanded="false" />
-                <element signature="e#10540#10610#0" expanded="false" />
-                <element signature="e#10640#10740#0" expanded="false" />
+                <element signature="e#6195#6279#0" expanded="false" />
+                <element signature="e#6355#6504#0" expanded="false" />
+                <element signature="e#6997#7477#0" expanded="false" />
+                <element signature="e#7034#7161#0" expanded="false" />
+                <element signature="e#7196#7323#0" expanded="false" />
+                <element signature="e#7329#7459#0" expanded="false" />
+                <element signature="e#10215#10330#0" expanded="false" />
+                <element signature="e#10349#10502#0" expanded="false" />
+                <element signature="e#10543#10613#0" expanded="false" />
+                <element signature="e#10643#10743#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="img-slider-btns.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="img-slider-btns.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/img-slider-btns.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.3548386">
+            <state line="35" column="9" selection-start="977" selection-end="977" vertical-scroll-proportion="0.7045161">
               <folding>
                 <element signature="e#253#349#0" expanded="false" />
                 <element signature="e#393#600#0" expanded="false" />
@@ -396,16 +396,16 @@
             <element signature="e#2455#2585#0" expanded="false" />
             <element signature="e#2661#2881#0" expanded="false" />
             <element signature="e#2715#2828#0" expanded="false" />
-            <element signature="e#6192#6276#0" expanded="false" />
-            <element signature="e#6352#6501#0" expanded="false" />
-            <element signature="e#6994#7474#0" expanded="false" />
-            <element signature="e#7031#7158#0" expanded="false" />
-            <element signature="e#7193#7320#0" expanded="false" />
-            <element signature="e#7326#7456#0" expanded="false" />
-            <element signature="e#10212#10327#0" expanded="false" />
-            <element signature="e#10346#10499#0" expanded="false" />
-            <element signature="e#10540#10610#0" expanded="false" />
-            <element signature="e#10640#10740#0" expanded="false" />
+            <element signature="e#6195#6279#0" expanded="false" />
+            <element signature="e#6355#6504#0" expanded="false" />
+            <element signature="e#6997#7477#0" expanded="false" />
+            <element signature="e#7034#7161#0" expanded="false" />
+            <element signature="e#7196#7323#0" expanded="false" />
+            <element signature="e#7329#7459#0" expanded="false" />
+            <element signature="e#10215#10330#0" expanded="false" />
+            <element signature="e#10349#10502#0" expanded="false" />
+            <element signature="e#10543#10613#0" expanded="false" />
+            <element signature="e#10643#10743#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -565,32 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img-slider-btns.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.3548386">
-          <folding>
-            <element signature="e#253#349#0" expanded="false" />
-            <element signature="e#393#600#0" expanded="false" />
-            <element signature="e#625#639#0" expanded="false" />
-            <element signature="e#665#680#0" expanded="false" />
-            <element signature="e#707#754#0" expanded="false" />
-            <element signature="e#1004#1117#0" expanded="false" />
-            <element signature="e#1141#1176#0" expanded="false" />
-            <element signature="e#1202#1295#0" expanded="false" />
-            <element signature="e#1322#1454#0" expanded="false" />
-            <element signature="e#1484#1504#0" expanded="false" />
-            <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#a#0;tag#li#0;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#a#0;tag#li#1;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#li#2;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#a#0;tag#li#2;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#li#3;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#a#0;tag#li#3;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img-slider-callback.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="35" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-30.193548">
@@ -607,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="253" column="17" selection-start="9443" selection-end="9443" vertical-scroll-proportion="0.3">
+        <state line="127" column="0" selection-start="4490" selection-end="4490" vertical-scroll-proportion="-12.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#112#782#0" expanded="false" />
@@ -632,16 +606,42 @@
             <element signature="e#2455#2585#0" expanded="false" />
             <element signature="e#2661#2881#0" expanded="false" />
             <element signature="e#2715#2828#0" expanded="false" />
-            <element signature="e#6192#6276#0" expanded="false" />
-            <element signature="e#6352#6501#0" expanded="false" />
-            <element signature="e#6994#7474#0" expanded="false" />
-            <element signature="e#7031#7158#0" expanded="false" />
-            <element signature="e#7193#7320#0" expanded="false" />
-            <element signature="e#7326#7456#0" expanded="false" />
-            <element signature="e#10212#10327#0" expanded="false" />
-            <element signature="e#10346#10499#0" expanded="false" />
-            <element signature="e#10540#10610#0" expanded="false" />
-            <element signature="e#10640#10740#0" expanded="false" />
+            <element signature="e#6195#6279#0" expanded="false" />
+            <element signature="e#6355#6504#0" expanded="false" />
+            <element signature="e#6997#7477#0" expanded="false" />
+            <element signature="e#7034#7161#0" expanded="false" />
+            <element signature="e#7196#7323#0" expanded="false" />
+            <element signature="e#7329#7459#0" expanded="false" />
+            <element signature="e#10215#10330#0" expanded="false" />
+            <element signature="e#10349#10502#0" expanded="false" />
+            <element signature="e#10543#10613#0" expanded="false" />
+            <element signature="e#10643#10743#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img-slider-btns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="9" selection-start="977" selection-end="977" vertical-scroll-proportion="0.7045161">
+          <folding>
+            <element signature="e#253#349#0" expanded="false" />
+            <element signature="e#393#600#0" expanded="false" />
+            <element signature="e#625#639#0" expanded="false" />
+            <element signature="e#665#680#0" expanded="false" />
+            <element signature="e#707#754#0" expanded="false" />
+            <element signature="e#1004#1117#0" expanded="false" />
+            <element signature="e#1141#1176#0" expanded="false" />
+            <element signature="e#1202#1295#0" expanded="false" />
+            <element signature="e#1322#1454#0" expanded="false" />
+            <element signature="e#1484#1504#0" expanded="false" />
+            <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#a#0;tag#li#0;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#a#0;tag#li#1;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#li#2;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#a#0;tag#li#2;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#li#3;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#a#0;tag#li#3;tag#ul#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
