@@ -243,10 +243,9 @@
                 sX = fns.client(e, "X");
                 sY = fns.client(e, "Y");
                 fns.transition(this, "");
-                //!def.isTouch && e.preventDefault();
+                !def.isTouch && e.preventDefault(); // 如果是鼠标事件，把鼠标自带的drag功能清除
                 autoSlide.stop();
                 startCallback(opt, cur);
-                return false;
             });
 
             $box.on(eventType.move, function (e) {
@@ -268,9 +267,9 @@
                     return;
                 }
                 e.preventDefault();
-                //fns.transform(this, fns.translate((x / width  - cur) * percent + "%", 0, 0));
                 moveSlider($(this), x);
                 moveCallback(opt, cur);
+                return false;   // 禁止冒泡，避免嵌套多个slider导致事件冲突
             });
 
             $box.on(eventType.end, function (e) {
