@@ -127,15 +127,16 @@
 
             if(def.vendor[0] + "Transition" in document.body.style) {
                 slideAnimate = function ($this) {
+                    var endEvent = $.fx.transitionEnd || "transitionend";
                     function end(e) {
                         var _self = e.target;
                         fns.transition(_self, "");
                         aniEndCallback(opt, cur);
-                        $(_self).off($.fx.transitionEnd, end);
+                        $(_self).off(endEvent, end);
                         return false;
                     }
                     slideAnimate = function ($this) {
-                        $this.on($.fx.transitionEnd, end);
+                        $this.on(endEvent, end);
                         fns.transition($this[0], transitionStr);
                         fns.transform($this[0], fns.translate(-cur * percent + "%", 0, 0));
                     };
