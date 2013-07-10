@@ -249,7 +249,6 @@
                 isXY = 0;
                 sX = fns.client(e, "X");
                 sY = fns.client(e, "Y");
-                fns.transition(this, "");
                 !def.isTouch && e.preventDefault(); // 如果是鼠标事件，把鼠标自带的drag功能清除
                 autoSlide.stop();
                 startCallback(opt, cur);
@@ -282,11 +281,11 @@
             $box.on(eventType.end, function (e) {
                 if (!isBegin) {
                     endCallback(opt, cur);
-                    return isBegin = isMove = false;
+                    isBegin = isMove = false;
                 } else if (!isMove) {
                     endCallback(opt, cur);
                     autoSlide.play();
-                    return isBegin = isMove = false;
+                    isBegin = isMove = false;
                 }
 
                 if (x > slideDistance) {

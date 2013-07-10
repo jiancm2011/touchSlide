@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta id="viewport" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>img-slider-callback</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        /* base CSS */
+        .wrap {
+            width:100%;
+            overflow:hidden;
+            position: relative;
+            background-color: #555;
+        }
+
+        .wrap_box {
+            position: relative;
+            padding: 12px 0;
+            text-align: center;
+            -webkit-backface-visibility:hidden;
+            -webkit-transform-style:preserve-3d;
+        }
+        .wrap_box:after {
+            content:"\200B";
+            display:block;
+            height:0;
+            clear:both;
+        }
+        .wrap_box li {
+            float:left;
+        }
+
+        .slider {
+            width:100%;
+            overflow:hidden;
+            position: relative;
+        }
+
+        .slider_leftBtn, .slider_rightBtn {
+            position: absolute;
+            background-color: #eee;
+            top: 50%;
+            margin-top: -30px;
+            height: 60px;
+            width: 50px;
+            z-index: 1;
+        }
+        .slider_leftBtn { left: 0px; }
+        .slider_rightBtn { right: 0px; }
+        .slider .disabled {
+            background-color: #aaa;
+        }
+
+        .slider_box {
+            position: relative;
+            padding: 12px 0;
+            text-align: center;
+            -webkit-backface-visibility:hidden;
+            -webkit-transform-style:preserve-3d;
+        }
+        .slider_box:after {
+            content:"\200B";
+            display:block;
+            height:0;
+            clear:both;
+        }
+        .slider_box li {
+            float:left;
+        }
+
+        .slider_pointer {
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+        }
+        .slider_pointer i {
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #eee;
+        }
+        .slider_pointer .cur { background:#aaa; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <ul class="wrap_box">
+        <li>
+            <p>1</p>
+            <div class="slider">
+                <div class="slider_leftBtn">&lt;</div>
+                <ul class="slider_box">
+                    <li>
+                        <a href="#img1" title="我是标题1">
+                            <img src="http://dummyimage.com/300x110/000/fff" alt="我是标题1">
+                            <p>我是标题1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#img2" title="我是标题2">
+                            <img src="http://dummyimage.com/300x110/a00/fff" alt="我是标题2">
+                            <p>我是标题2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#img3" title="我是标题3">
+                            <img src="http://dummyimage.com/300x110/0a0/fff" alt="我是标题3">
+                            <p>我是标题3</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#img4" title="我是标题4">
+                            <img src="http://dummyimage.com/300x110/00a/fff" alt="我是标题4">
+                            <p>我是标题4</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="slider_rightBtn">&gt;</div>
+                <div class="slider_pointer">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+        </li>
+        <li>2</li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    var script = '%3Cscript type="text/javascript" src="js/'
+            + ('__proto__' in {} ? "zepto" : "jquery-1.9.1") + '.js" %3E%3C/script%3E';
+    document.write(decodeURIComponent(script));
+</script>
+<script type="text/javascript" src="js/touch-slide.js"></script>
+<script type="text/javascript">
+    touchSlide({
+        $box: $(".wrap_box"),
+        isPlay: false,
+        start: function (opt, cur) {
+            console.log("parent:", "start");
+        },
+        move: function (opt, cur) {
+            console.log("parent:", "move");
+        },
+        end: function (opt, cur) {
+            console.log("parent:", "end");
+        },
+        animatestart: function (opt, cur) {
+            console.log("parent:", "animatestart", cur);
+        },
+        animateend: function (opt, cur) {
+            console.log("parent:", "animateend", cur);
+        }
+    });
+
+    touchSlide({
+        $box: $(".slider_box"),
+        $pointer:  $(".slider_pointer"),
+        $leftBtn: $(".slider_leftBtn"),
+        $rightBtn: $(".slider_rightBtn"),
+        isPlay: false,
+        playInterval: 8000,
+        start: function (opt, cur) {
+            console.log("child:", "start");
+        },
+        move: function (opt, cur) {
+            console.log("child:", "move");
+        },
+        end: function (opt, cur) {
+            console.log("child:", "end");
+        },
+        animatestart: function (opt, cur) {
+            console.log("child:", "animatestart", cur);
+        },
+        animateend: function (opt, cur) {
+            console.log("child:", "animateend", cur);
+        }
+    });
+</script>
+</body>
+</html>
