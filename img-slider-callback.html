@@ -104,11 +104,12 @@
 </script>
 <script type="text/javascript" src="js/touch-slide.js"></script>
 <script type="text/javascript">
-    touchSlide({
+    var ts = touchSlide({
         $box: $(".slider_box"),
         $pointer:  $(".slider_pointer"),
         $leftBtn: $(".slider_leftBtn"),
         $rightBtn: $(".slider_rightBtn"),
+        isPlay: false,
         playInterval: 8000,
         start: function (opt, cur) {
             console.log("start");

@@ -100,6 +100,7 @@
                 $blocks = $box.children(),
                 blocksLength = $blocks.length, //滑块数量
                 curClass = opt.curClass,
+                disabledClass = opt.disabledClass,
                 percent = 100 / blocksLength,
                 width = $blocks.width(),
                 slideDistance = width / 5, //有效滑动距离（触发滑块切换）
@@ -160,7 +161,7 @@
 
             $box.on("animatestart", function (e, opt, cur) {
                 highlightPointer();
-                checkBtnStatus("disabled");
+                checkBtnStatus(disabledClass);
                 aniStartCallback(opt, cur);
                 slideAnimate($(this));
             });
@@ -186,6 +187,21 @@
                 });
             }
 
+            $.extend(opt, {
+                next: function () {
+                    if (cur < blocksLength - 1) {
+                        cur++;
+                        $box.triggerHandler("animatestart", [opt, cur]);
+                    }
+                },
+                prev: function () {
+                    if (cur > 0) {
+                        cur--;
+                        $box.triggerHandler("animatestart", [opt, cur]);
+                    }
+                }
+            });
+
             // 判断是否有 $leftBtn 和 $rightBtn 模块
             if ($leftBtn && $rightBtn && $leftBtn.length && $rightBtn.length) {
                 checkBtnStatus = function (klass) {
@@ -200,20 +216,8 @@
                         $rightBtn.removeClass(klass);
                     }
                 };
-
-                $leftBtn.addClass("disabled").on("click", function () {
-                    if (cur > 0) {
-                        cur--;
-                        $box.triggerHandler("animatestart", [opt, cur]);
-                    }
-                });
-
-                $rightBtn.on("click", function () {
-                    if (cur < blocksLength - 1) {
-                        cur++;
-                        $box.triggerHandler("animatestart", [opt, cur]);
-                    }
-                });
+                $leftBtn.addClass(disabledClass).on("click", opt.prev);
+                $rightBtn.on("click", opt.next);
             }
 
             var autoSlide = function () {
@@ -306,13 +310,14 @@
                 $leftBtn: null,                         // 左边按钮的$对象 [可选]
                 $rightBtn: null,                        // 右边按钮的$对象 [可选]
                 curClass: "cur",                        // 设置被选中tabs的类名，缺省值:"cur" [可选]
+                disabledClass: "disabled",              // 交互组件禁用状态的类名，缺省值:"disabled" [可选]
                 isPlay: true,                           // 是否自动播放，缺省值:true [可选]
                 playInterval: 5000,                     // 动画自动播放的切换间隔时间，缺省值:5000ms [可选]
-                start: function (opt, cur) {},          // touchstart触发的回调
-                move: function (opt, cur) {},           // touchmove触发的回调
-                end: function (opt, cur) {},            // touchend触发的回调
-                animatestart: function (opt, cur) {},   // 动画开始时触发的回调
-                animateend: function (opt, cur) {}      // 动画结束时触发的回调
+                start: function (opt, cur) {},          // touchstart触发的回调 [可选]
+                move: function (opt, cur) {},           // touchmove触发的回调 [可选]
+                end: function (opt, cur) {},            // touchend触发的回调 [可选]
+                animatestart: function (opt, cur) {},   // 动画开始时触发的回调 [可选]
+                animateend: function (opt, cur) {}      // 动画结束时触发的回调 [可选]
             };
 
             $.extend(opt, o);
