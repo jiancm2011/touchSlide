@@ -67,21 +67,20 @@
                 return elem;
             },
             client: function (e, path) {
-                var str = "client" + path;
                 if (def.isTouch) {
+                    // jQuery.Event 没有 targetTouches 的对象
                     fns.client = function (e, path) {
-                        var str = "client" + path;
-                        return e.targetTouches[0][str];
-                    }
-                    return e.targetTouches[0][str];
+                        var event = e.originalEvent ? e.originalEvent : e,
+                            str = "client" + path;
+                        return event.targetTouches[0][str];
+                    };
                 } else {
                     fns.client = function (e, path) {
                         var str = "client" + path;
                         return e[str];
-                    }
-                    return e[str];
+                    };
                 }
-
+                return fns.client(e, path)
             }
         };
 
