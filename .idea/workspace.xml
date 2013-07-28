@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5f9caa16-f2ff-4a85-b068-770f91bd9b78" name="Default" comment="" />
+    <ignored path="touchSlide.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="touch-slide.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="307" column="22" selection-start="11340" selection-end="11340" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#112#807#0" expanded="false" />
+                <element signature="e#195#731#0" expanded="false" />
+                <element signature="e#223#426#0" expanded="false" />
+                <element signature="e#529#684#0" expanded="false" />
+                <element signature="e#574#666#0" expanded="false" />
+                <element signature="e#821#924#0" expanded="false" />
+                <element signature="e#932#2982#0" expanded="false" />
+                <element signature="e#969#1845#0" expanded="false" />
+                <element signature="e#1145#1198#0" expanded="false" />
+                <element signature="e#1300#1353#0" expanded="false" />
+                <element signature="e#1421#1474#0" expanded="false" />
+                <element signature="e#1502#1671#0" expanded="false" />
+                <element signature="e#1550#1652#0" expanded="false" />
+                <element signature="e#1677#1830#0" expanded="false" />
+                <element signature="e#1722#1811#0" expanded="false" />
+                <element signature="e#1893#2000#0" expanded="false" />
+                <element signature="e#2042#2307#0" expanded="false" />
+                <element signature="e#2116#2200#0" expanded="false" />
+                <element signature="e#2348#2972#0" expanded="false" />
+                <element signature="e#2383#2722#0" expanded="false" />
+                <element signature="e#2494#2703#0" expanded="false" />
+                <element signature="e#2728#2914#0" expanded="false" />
+                <element signature="e#2782#2895#0" expanded="false" />
+                <element signature="e#3011#3146#0" expanded="false" />
+                <element signature="e#3176#11286#0" expanded="false" />
+                <element signature="e#4678#5630#0" expanded="false" />
+                <element signature="e#4728#5443#0" expanded="false" />
+                <element signature="e#4840#5101#0" expanded="false" />
+                <element signature="e#5154#5383#0" expanded="false" />
+                <element signature="e#5494#5615#0" expanded="false" />
+                <element signature="e#5636#6085#0" expanded="false" />
+                <element signature="e#5686#5922#0" expanded="false" />
+                <element signature="e#5722#5801#0" expanded="false" />
+                <element signature="e#5829#5902#0" expanded="false" />
+                <element signature="e#5973#6070#0" expanded="false" />
+                <element signature="e#6146#6327#0" expanded="false" />
+                <element signature="e#6407#7132#0" expanded="false" />
+                <element signature="e#6507#6591#0" expanded="false" />
+                <element signature="e#6667#6816#0" expanded="false" />
+                <element signature="e#6867#7116#0" expanded="false" />
+                <element signature="e#7160#7621#0" expanded="false" />
+                <element signature="e#7196#7391#0" expanded="false" />
+                <element signature="e#7246#7373#0" expanded="false" />
+                <element signature="e#7427#7607#0" expanded="false" />
+                <element signature="e#7462#7589#0" expanded="false" />
+                <element signature="e#7748#8416#0" expanded="false" />
+                <element signature="e#7800#8280#0" expanded="false" />
+                <element signature="e#7837#7964#0" expanded="false" />
+                <element signature="e#7999#8126#0" expanded="false" />
+                <element signature="e#8132#8262#0" expanded="false" />
+                <element signature="e#8458#9239#0" expanded="false" />
+                <element signature="e#8632#9117#0" expanded="false" />
+                <element signature="e#8673#8982#0" expanded="false" />
+                <element signature="e#8773#8940#0" expanded="false" />
+                <element signature="e#9024#9098#0" expanded="false" />
+                <element signature="e#9142#9224#0" expanded="false" />
+                <element signature="e#9294#9629#0" expanded="false" />
+                <element signature="e#9682#10451#0" expanded="false" />
+                <element signature="e#9714#9766#0" expanded="false" />
+                <element signature="e#10173#10262#0" expanded="false" />
+                <element signature="e#10503#11243#0" expanded="false" />
+                <element signature="e#10535#10643#0" expanded="false" />
+                <element signature="e#10662#10808#0" expanded="false" />
+                <element signature="e#10849#10919#0" expanded="false" />
+                <element signature="e#10949#11049#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="img-slider-callback.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/img-slider-callback.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="21" selection-start="3109" selection-end="3114" vertical-scroll-proportion="0.25589225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/js/touch-slide.js" />
+        <option value="$PROJECT_DIR$/img-slider-callback.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1292" />
+    <option name="height" value="786" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="touchSlide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="touchSlide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="touchSlide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="touchSlide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="touchSlide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1375004896513</created>
+      <updated>1375004896513</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1292" height="786" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12764227" sideWeight="0.67127496" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/img-slider-btns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="394" selection-end="394" vertical-scroll-proportion="0.08754209">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/touch-slide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="307" column="22" selection-start="11340" selection-end="11340" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#112#807#0" expanded="false" />
+            <element signature="e#195#731#0" expanded="false" />
+            <element signature="e#223#426#0" expanded="false" />
+            <element signature="e#529#684#0" expanded="false" />
+            <element signature="e#574#666#0" expanded="false" />
+            <element signature="e#821#924#0" expanded="false" />
+            <element signature="e#932#2982#0" expanded="false" />
+            <element signature="e#969#1845#0" expanded="false" />
+            <element signature="e#1145#1198#0" expanded="false" />
+            <element signature="e#1300#1353#0" expanded="false" />
+            <element signature="e#1421#1474#0" expanded="false" />
+            <element signature="e#1502#1671#0" expanded="false" />
+            <element signature="e#1550#1652#0" expanded="false" />
+            <element signature="e#1677#1830#0" expanded="false" />
+            <element signature="e#1722#1811#0" expanded="false" />
+            <element signature="e#1893#2000#0" expanded="false" />
+            <element signature="e#2042#2307#0" expanded="false" />
+            <element signature="e#2116#2200#0" expanded="false" />
+            <element signature="e#2348#2972#0" expanded="false" />
+            <element signature="e#2383#2722#0" expanded="false" />
+            <element signature="e#2494#2703#0" expanded="false" />
+            <element signature="e#2728#2914#0" expanded="false" />
+            <element signature="e#2782#2895#0" expanded="false" />
+            <element signature="e#3011#3146#0" expanded="false" />
+            <element signature="e#3176#11286#0" expanded="false" />
+            <element signature="e#4678#5630#0" expanded="false" />
+            <element signature="e#4728#5443#0" expanded="false" />
+            <element signature="e#4840#5101#0" expanded="false" />
+            <element signature="e#5154#5383#0" expanded="false" />
+            <element signature="e#5494#5615#0" expanded="false" />
+            <element signature="e#5636#6085#0" expanded="false" />
+            <element signature="e#5686#5922#0" expanded="false" />
+            <element signature="e#5722#5801#0" expanded="false" />
+            <element signature="e#5829#5902#0" expanded="false" />
+            <element signature="e#5973#6070#0" expanded="false" />
+            <element signature="e#6146#6327#0" expanded="false" />
+            <element signature="e#6407#7132#0" expanded="false" />
+            <element signature="e#6507#6591#0" expanded="false" />
+            <element signature="e#6667#6816#0" expanded="false" />
+            <element signature="e#6867#7116#0" expanded="false" />
+            <element signature="e#7160#7621#0" expanded="false" />
+            <element signature="e#7196#7391#0" expanded="false" />
+            <element signature="e#7246#7373#0" expanded="false" />
+            <element signature="e#7427#7607#0" expanded="false" />
+            <element signature="e#7462#7589#0" expanded="false" />
+            <element signature="e#7748#8416#0" expanded="false" />
+            <element signature="e#7800#8280#0" expanded="false" />
+            <element signature="e#7837#7964#0" expanded="false" />
+            <element signature="e#7999#8126#0" expanded="false" />
+            <element signature="e#8132#8262#0" expanded="false" />
+            <element signature="e#8458#9239#0" expanded="false" />
+            <element signature="e#8632#9117#0" expanded="false" />
+            <element signature="e#8673#8982#0" expanded="false" />
+            <element signature="e#8773#8940#0" expanded="false" />
+            <element signature="e#9024#9098#0" expanded="false" />
+            <element signature="e#9142#9224#0" expanded="false" />
+            <element signature="e#9294#9629#0" expanded="false" />
+            <element signature="e#9682#10451#0" expanded="false" />
+            <element signature="e#9714#9766#0" expanded="false" />
+            <element signature="e#10173#10262#0" expanded="false" />
+            <element signature="e#10503#11243#0" expanded="false" />
+            <element signature="e#10535#10643#0" expanded="false" />
+            <element signature="e#10662#10808#0" expanded="false" />
+            <element signature="e#10849#10919#0" expanded="false" />
+            <element signature="e#10949#11049#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img-slider-callback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="21" selection-start="3109" selection-end="3114" vertical-scroll-proportion="0.25589225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

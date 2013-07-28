@@ -13,7 +13,8 @@
                         O: "OTransform",
                         ms: "msTransform"
                     },
-                    style = D.body.style;
+                    style = D.body.style,
+                    key;
 
                 for (key in obj) {
                     if (obj[key] in style) {
@@ -80,7 +81,7 @@
                         return e[str];
                     };
                 }
-                return fns.client(e, path)
+                return fns.client(e, path);
             }
         };
 
@@ -125,7 +126,7 @@
                 slideAnimate = function () {},
                 moveSlider = function () {};
 
-            if(def.vendor[0] + "Transition" in document.body.style) {
+            if(def.vendor[0] + "Transition" in D.body.style) {
                 slideAnimate = function ($this) {
                     var endEvent = $.fx.transitionEnd || "transitionend";
                     function end(e) {
@@ -220,26 +221,28 @@
             }
 
             var autoSlide = function () {
+                var play = function () {},
+                    stop = function () {},
+                    interval = null;    //循环播放 计时器对象
+
                 if (opt.isPlay) {
-                    var interval = null; //循环播放 计时器对象
-                    return {
-                        play: function () {
-                            this.stop();
-                            interval = setInterval (function () {
-                                ++cur < blocksLength || (cur = 0);
-                                $box.triggerHandler("animatestart", [opt, cur]);
-                            }, opt.playInterval);
-                        },
-                        stop: function () {
-                            clearInterval(interval);
-                        }
+                    play = function () {
+                        this.stop();
+                        interval = W.setInterval(function () {
+                            ++cur < blocksLength || (cur = 0);
+                            $box.triggerHandler("animatestart", [opt, cur]);
+                        }, opt.playInterval);
                     };
-                } else {
-                    return {
-                        play: function () {},
-                        stop: function () {}
+
+                    stop = function () {
+                        W.clearInterval(interval);
                     };
                 }
+
+                return {
+                    play: play,
+                    stop: stop
+                };
             }();
 
             $box.on(eventType.start, function (e) {
