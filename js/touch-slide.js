@@ -283,21 +283,19 @@
             $box.on(eventType.end, function (e) {
                 if (!isBegin) {
                     endCallback(opt, cur);
-                    isBegin = isMove = false;
                 } else if (!isMove) {
                     endCallback(opt, cur);
                     autoSlide.play();
-                    isBegin = isMove = false;
+                } else {
+                    if (x > slideDistance) {
+                        cur = cur === 0 ? 0 : cur - 1;
+                    } else if (x < -slideDistance) {
+                        cur = cur === blocksLength - 1 ? blocksLength - 1 : cur + 1;
+                    }
+                    endCallback(opt, cur);
+                    $box.triggerHandler("animatestart", [opt, cur]);
+                    autoSlide.play();
                 }
-
-                if (x > slideDistance) {
-                    cur = cur === 0 ? 0 : cur - 1;
-                } else if (x < -slideDistance) {
-                    cur = cur === blocksLength - 1 ? blocksLength - 1 : cur + 1;
-                }
-                endCallback(opt, cur);
-                $box.triggerHandler("animatestart", [opt, cur]);
-                autoSlide.play();
                 isBegin = isMove = false;
             });
 
