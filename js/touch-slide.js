@@ -336,8 +336,6 @@
             $box.css("width", divisibleNum * 100 + "%");
             $blocks.css("width", 100 / divisibleNum + "%");
 
-
-            console.log(blocksLength)
             opt._divisibleNum = divisibleNum;
             event(opt);
             return opt;
