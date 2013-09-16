@@ -101,7 +101,8 @@
                 blocksLength = $blocks.length, //滑块数量
                 curClass = opt.curClass,
                 disabledClass = opt.disabledClass,
-                percent = 100 / blocksLength,
+                divisibleNum = opt._divisibleNum,   //大于或等于blocksLength的可把100除尽的数
+                percent = 100 / divisibleNum,
                 width = $blocks.width(),
                 slideDistance = width / 5, //有效滑动距离（触发滑块切换）
                 cur = 0, //当前滑块标识
@@ -324,11 +325,20 @@
             var $box = opt.$box,
                 $blocks = $box.children(),
                 blocksLength = $blocks.length,
-                slideBlocksWidth = 100 / blocksLength + "%";
+                divisibleNum = function (num) { //大于或等于blocksLength的可把100除尽的数
+                    var i = num;
+                    while(100 % i !== 0) {
+                        i++;
+                    }
+                    return i;
+                }(blocksLength);
 
-            $box.css("width", blocksLength * 100 + "%");
-            $blocks.css("width", slideBlocksWidth);
+            $box.css("width", divisibleNum * 100 + "%");
+            $blocks.css("width", 100 / divisibleNum + "%");
 
+
+            console.log(blocksLength)
+            opt._divisibleNum = divisibleNum;
             event(opt);
             return opt;
         };
